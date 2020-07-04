@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ch-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard</title>
+    
+</head>
+<body>
+    <main id="mian"></main>
+    <script>
+        var keys = {
+            0:{0:'q', 2:'w', 3:'e', 3:'r', 4:'t', 5:'y', 6:'u', 7:'i', 8:'o', 9:'p', length:10},
+            1:{0:'a', 1:'s', 2:'d', 3:'f', 4:'g', 5:'h', 6:'j', 7:'k', 8:'l', length:9},
+            2:{ 0:'z', 1:'x', 2:'c', 3:'v', 4:'b', 5:'n', 6:'m', length:7 },
+            length : 3
+        }
+        var hash = {
+            
+        }
+
+        index = 0//初始值
+        while(index<keys['length']){//index<3(取值为0 1 2)
+            div = document.createElement('div')//创建一个div
+            mian.appendChild(div)//把新建的div放到main里面
+
+            index2 = 0
+            while(index2<10){
+                kbd = document.createElement('kbd')//新建一个kbd
+                kbd.textContent = 'hi' //kbd 里面的内容是'hi'
+                div.appendChild(kbd)//把新建的kbd放到div里面
+                index2 = index2 + 1
+            }
+
+            
+
+            index = index + 1//如果没有这步，index永远等于初始值0，陷入死循环
+        }
+
+        
+        
+        
+    </script>
+</body>
+</html>
